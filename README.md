@@ -13,4 +13,7 @@
 ### city_map_list
 ![image](https://github.com/bdi2503/Navigator/assets/142053096/26df8128-0702-4c7e-b9a4-3776bce2c5b2)
 
-* Пошаговое решенин с коментариями находится в файле **Navigator_steps**, готовый код лежит в файле **Navigaor_full**.
+* Пошаговое решенин с коментариями находится в файле
+  **[Navigator_steps](https://github.com/bdi2503/Navigator/blob/main/Navigator_steps.ipynb/ "Ссылка на проект")**,
+  готовый код лежит в файле
+  **[Navigaor_full](https://github.com/bdi2503/Navigator/blob/main/Navigator_full.ipynb/ "Ссылка на проект")**.
