@@ -10,10 +10,29 @@
 - Маршрут должен быть сохранен в список, где каждый элемент, это tuple с координатами каждого шага курьера.
 - Курьер проходит один шаг за 10 минут и может доставлять заказы в любом порядке.
 
-### city_map_list
-![image](https://github.com/bdi2503/Navigator/assets/142053096/26df8128-0702-4c7e-b9a4-3776bce2c5b2)
-
-* Пошаговое решенин с коментариями находится в файле
+Пошаговое решенин с коментариями находится в файле
   **[Navigator_steps](https://github.com/bdi2503/Navigator/blob/main/Navigator_steps.ipynb/ "Ссылка на проект")**,
   готовый код лежит в файле
   **[Navigaor_full](https://github.com/bdi2503/Navigator/blob/main/Navigator_full.ipynb/ "Ссылка на проект")**.
+
+### Карта города (city_map_list)
+![image](https://github.com/bdi2503/Navigator/assets/142053096/26df8128-0702-4c7e-b9a4-3776bce2c5b2)
+```
+# Визуализация найденого пути
+
+route_map*=50000
+sns.set()
+
+for i in route:
+    route_map[i[1],i[0]] += 10000
+
+for i in orders_location:
+    route_map[i[1],i[0]] = 15000
+
+print('Карта маршрута')
+
+plt.figure(figsize = (22,18))
+sns.heatmap(route_map, cbar= False, cmap="coolwarm")
+```
+![image](https://github.com/user-attachments/assets/674baa2e-b83a-469a-b2d6-0c76cdcffb3e)
+
